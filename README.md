@@ -37,14 +37,13 @@ These instructions will get you a copy of the project up and running on your loc
 -   Composer dependency manager
 -   PHP 8+
 -   Laravel 10.18+
--   Livewire 3
 
 #### Installation
 
 1- Clone the project
 
 ```
-git clone https://github.com/kareemaladawy/laravel.git
+git clone https://github.com/mrmoon007/quiz-system.git
 ```
 
 2- Install the dependencies
@@ -77,13 +76,6 @@ php artisan migrate --seed
 php artisan serve
 ```
 
-## Running Tests
-
-To run tests, run the following command
-
-```
-  php artisan test
-```
 ## Screenshots
 
 <a href="https://github.com/kareemaladawy/laravel-quiz-system/issues/1">Admin Screenshots</a> <br>
@@ -91,7 +83,7 @@ To run tests, run the following command
 
 ## Authors
 
--   [@kareemalaadwy](https://www.github.com/kareemalaadwy)
+-   [@mostafijur](https://github.com/mrmoon007)
 
 ## Contributing
 
