@@ -10,7 +10,7 @@ This quiz system allows users to participate in quizzes, view their results, and
 
 ## Database Schema
 
-![image](https://github.com/kareemaladawy/laravel-quiz-system/assets/62149929/0f00b4e8-74b5-45e3-852c-d1980122e13e)
+![image](https://github.com/kareemaladawy/laravel-quiz-system/assets/62149929/0f00b4e8-)
 
 ## Features
 
