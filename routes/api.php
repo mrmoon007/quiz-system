@@ -25,11 +25,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('login', [LoginController::class, 'login']);
 Route::post('register', [RegisterController::class, 'register']);
 
-Route::middleware('auth:api')->group(function () {
+Route::middleware('auth:sanctum')->group(function () {
     Route::get('profile', [ProfileController::class, 'show']);
     Route::post('logout', [ProfileController::class, 'logout']);
 });
 
-Route::post('register', [AuthController::class, 'create']);
-Route::post('login', [AuthController::class, 'login']);
-Route::middleware('auth:sanctum')->get('profile', [AuthController::class, 'profile']);
+// Route::post('register', [AuthController::class, 'create']);
+// Route::post('login', [AuthController::class, 'login']);
+// Route::middleware('auth:sanctum')->get('profile', [AuthController::class, 'profile']);

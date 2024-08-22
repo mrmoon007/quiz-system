@@ -13,84 +13,6 @@
         "version": "1.0.0"
     },
     "paths": {
-        "/api/register": {
-            "post": {
-                "tags": [
-                    "Admin"
-                ],
-                "summary": "User Register",
-                "description": "User Register here",
-                "operationId": "Register",
-                "requestBody": {
-                    "content": {
-                        "multipart/form-data": {
-                            "schema": {
-                                "required": [
-                                    "name",
-                                    "email",
-                                    "password",
-                                    "password_confirmation"
-                                ],
-                                "properties": {
-                                    "name": {
-                                        "type": "text",
-                                        "example": "Mostafijur"
-                                    },
-                                    "email": {
-                                        "type": "text",
-                                        "example": "mostafijur@gmail.com"
-                                    },
-                                    "password": {
-                                        "type": "password",
-                                        "example": "123456"
-                                    },
-                                    "password_confirmation": {
-                                        "type": "password",
-                                        "example": "123456"
-                                    }
-                                },
-                                "type": "object"
-                            }
-                        },
-                        "application/json": {
-                            "schema": {}
-                        }
-                    }
-                },
-                "responses": {
-                    "201": {
-                        "description": "Register Successfully",
-                        "content": {
-                            "application/json": {
-                                "schema": {}
-                            }
-                        }
-                    },
-                    "200": {
-                        "description": "Register Successfully",
-                        "content": {
-                            "application/json": {
-                                "schema": {}
-                            }
-                        }
-                    },
-                    "422": {
-                        "description": "Unprocessable Entity",
-                        "content": {
-                            "application/json": {
-                                "schema": {}
-                            }
-                        }
-                    },
-                    "400": {
-                        "description": "Bad request"
-                    },
-                    "404": {
-                        "description": "Resource Not Found"
-                    }
-                }
-            }
-        },
         "/api/login": {
             "post": {
                 "tags": [
@@ -205,6 +127,84 @@
                         "bearer": []
                     }
                 ]
+            }
+        },
+        "/api/register": {
+            "post": {
+                "tags": [
+                    "Admin"
+                ],
+                "summary": "User Register",
+                "description": "User Register here",
+                "operationId": "Register",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "required": [
+                                    "name",
+                                    "email",
+                                    "password",
+                                    "password_confirmation"
+                                ],
+                                "properties": {
+                                    "name": {
+                                        "type": "text",
+                                        "example": "Mostafijur"
+                                    },
+                                    "email": {
+                                        "type": "text",
+                                        "example": "mostafijur@gmail.com"
+                                    },
+                                    "password": {
+                                        "type": "password",
+                                        "example": "123456"
+                                    },
+                                    "password_confirmation": {
+                                        "type": "password",
+                                        "example": "123456"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        },
+                        "application/json": {
+                            "schema": {}
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Register Successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "200": {
+                        "description": "Register Successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
             }
         },
         "/api/home": {
