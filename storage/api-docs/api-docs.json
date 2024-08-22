@@ -33,16 +33,20 @@
                                 ],
                                 "properties": {
                                     "name": {
-                                        "type": "text"
+                                        "type": "text",
+                                        "example": "Mostafijur"
                                     },
                                     "email": {
-                                        "type": "text"
+                                        "type": "text",
+                                        "example": "mostafijur@gmail.com"
                                     },
                                     "password": {
-                                        "type": "password"
+                                        "type": "password",
+                                        "example": "123456"
                                     },
                                     "password_confirmation": {
-                                        "type": "password"
+                                        "type": "password",
+                                        "example": "123456"
                                     }
                                 },
                                 "type": "object"

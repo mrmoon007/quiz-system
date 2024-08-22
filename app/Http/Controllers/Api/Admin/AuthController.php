@@ -26,10 +26,10 @@ class AuthController extends Controller
      *            @OA\Schema(
      *               type="object",
      *               required={"name","email", "password", "password_confirmation"},
-     *               @OA\Property(property="name", type="text"),
-     *               @OA\Property(property="email", type="text"),
-     *               @OA\Property(property="password", type="password"),
-     *               @OA\Property(property="password_confirmation", type="password")
+     *               @OA\Property(property="name", type="text", example="Mostafijur"),
+     *               @OA\Property(property="email", type="text", example="mostafijur@gmail.com"),
+     *               @OA\Property(property="password", type="password", example="123456"),
+     *               @OA\Property(property="password_confirmation", type="password", example="123456")
      *            ),
      *        ),
      *    ),
