@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\Api\Admin\Auth\LoginController;
+use App\Http\Controllers\Api\Admin\Auth\ProfileController;
+use App\Http\Controllers\Api\Admin\Auth\RegisterController;
+use App\Http\Controllers\Api\Admin\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +21,15 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('login', [LoginController::class, 'login']);
+Route::post('register', [RegisterController::class, 'register']);
+
+Route::middleware('auth:api')->group(function () {
+    Route::get('profile', [ProfileController::class, 'show']);
+    Route::post('logout', [ProfileController::class, 'logout']);
+});
+
+Route::post('register', [AuthController::class, 'create']);
+Route::post('login', [AuthController::class, 'login']);
+Route::middleware('auth:sanctum')->get('profile', [AuthController::class, 'profile']);

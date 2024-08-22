@@ -8,7 +8,7 @@ class HomeController extends Controller
 {
     /**
      * @OA\Get(
-     *     path="/api/Home",
+     *     path="/api/home",
      *     operationId="getProfile",
      *     tags={"Profile"},
      *     summary="Get user profile",
@@ -33,7 +33,7 @@ class HomeController extends Controller
      *         response=401,
      *         description="Unauthorized"
      *     )
-     * )
+     * ) 
      */
 
     public function index()
